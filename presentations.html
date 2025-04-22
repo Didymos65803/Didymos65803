@@ -157,12 +157,12 @@
             margin-bottom: 3rem;
         }
 
-        /* Presentations Grid */
-        .presentations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
+            /* Presentations Grid */
+            .presentations-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 1rem; /* Reduced gap for less vertical space */
+            }
 
         .presentation-card {
             background-color: white;
@@ -189,7 +189,7 @@
 
         .presentation-content h3 {
             margin-bottom: 0.5rem;
-        }
+        } 
 
         .presentation-content .meta {
             color: #666;
@@ -342,154 +342,94 @@
             </div>
 
             <!-- Presentations Grid -->
-            <div class="presentations-grid">
-                <!-- Presentation 1 -->
+
+                <div class="presentations-grid">
+                <!-- Presentation top -->
                 <div class="presentation-card" data-category="conference">
-                    <img src="/api/placeholder/600/400" alt="Presentation on Venus">
-                    <div class="presentation-content">
-                        <h3>Understanding Atmospheric Dynamics on Venus Using a General Circulation Model</h3>
-                        <div class="meta">International Planetary Science Conference (2024)</div>
-                        <div class="presentation-tags">
-                            <span class="tag">Venus</span>
-                            <span class="tag">GCM</span>
-                            <span class="tag">Atmospheric Dynamics</span>
-                        </div>
-                        <p>Presented research on the development of a gnomonic equiangular cubed-sphere GCM for more accurate simulations of polar circulation on Venus.</p>
+                    <div class="presentation-content">                
+                        <h3>Astronomy in Writing </h3>
+                        <div class="meta">臺大天文社天。文學工作坊</div>
+                        <div class = "meta">NTUAST Astronomy & Literature Workshop</div>
+                        <div class="meta">2025.05.22</div>
                         <div class="presentation-links">
-                            <a href="slides/venus_gcm_2024.pdf" class="btn">Slides</a>
-                            <a href="videos/venus_presentation_2024.mp4" class="btn">Video</a>
+                            <a href=""class="btn">Slides(Upcoming)</a> 
                         </div>
                     </div>
                 </div>
-
-                <!-- Presentation 2 -->
+            
                 <div class="presentation-card" data-category="conference">
-                    <img src="/api/placeholder/600/400" alt="Machine Learning Presentation">
-                    <div class="presentation-content">
-                        <h3>Machine Learning Approaches for Solar System Object Classification</h3>
-                        <div class="meta">Asia-Pacific Astronomy Conference (2023)</div>
-                        <div class="presentation-tags">
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Solar System</span>
-                            <span class="tag">Classification</span>
-                        </div>
-                        <p>An overview of machine learning techniques applied to the classification of small solar system bodies based on the FOSSIL survey data.</p>
+                    <div class="presentation-content">                
+                        <h3>Planetary Defense Mission</h3>
+                        <div class="meta">南山中學科學講座</div>
+                        <div class = "meta">Nanshan High School Science Lecture</div>
+                        <div class="meta">2025.05.06</div>
                         <div class="presentation-links">
-                            <a href="slides/ml_solar_system_2023.pdf" class="btn">Slides</a>
+                            <a href=""class="btn">Slides(Upcoming)</a> 
                         </div>
                     </div>
                 </div>
 
-                <!-- Presentation 3 -->
-                <div class="presentation-card" data-category="seminar">
-                    <img src="/api/placeholder/600/400" alt="AGN Presentation">
-                    <div class="presentation-content">
-                        <h3>Obscured AGN in the Early Universe: JWST Findings</h3>
-                        <div class="meta">NTU Astronomy Department Seminar (2024)</div>
-                        <div class="presentation-tags">
-                            <span class="tag">AGN</span>
-                            <span class="tag">JWST</span>
-                            <span class="tag">Early Universe</span>
-                        </div>
-                        <p>Presented recent findings from JWST observations regarding obscured AGNs and their implications for black hole growth throughout cosmic history.</p>
+                <div class="presentation-card" data-category="conference">
+                    <div class="presentation-content">                
+                        <h3>Asteroid in Love</h3>
+                        <div class="meta">北市大天文社社課演講</div>
+                        <div class = "meta">UT Astronomy Club Talks</div>
+                        <div class="meta">2024.10.03</div>
+                        <p>Typhoon Day!</p>
                         <div class="presentation-links">
-                            <a href="slides/agn_jwst_2024.pdf" class="btn">Slides</a>
+                            <a href="https://drive.google.com/file/d/1HTyMAJ86pgmJHEDBRuX8zccrXoiiPmTB/view?usp=drive_link" class="btn">Slides</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="presentation-card" data-category="conference">
+                    <div class="presentation-content">                
+                        <h3>Particle Physics and Cosmology</h3>
+                        <div class="meta">2024 清大天文營 </div>
+                        <div class = "meta">2024 NTHU Astro Camp</div>
+                        <div class="meta">2024.08.04</div>
+                        <p>Co-work with 翁俞安綸</p>
+                        <div class="presentation-links">
+                            <a href="https://drive.google.com/file/d/1dW5cHhS4R8khdQqRiIXQTyd9IU8-07o8/view?usp=drive_link" class="btn">Slides</a> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="presentation-card" data-category="conference">
+                    <div class="presentation-content">                
+                        <h3>Astronomy in Love</h3>
+                        <div class="meta">2024 清大天文營</div>
+                        <div class = "meta">2024 NTHU AStro Camp</div>
+                        <div class="meta">2024.08.04</div>
+                        <div class="presentation-links">
+                            <a href="https://drive.google.com/file/d/1BcDdZyYzFdjTymL2o-9HgTdC3lw7BCfs/view?usp=drive_link" class="btn">Slides</a> 
                         </div>
                     </div>
                 </div>
 
-                <!-- Presentation 4 -->
-                <div class="presentation-card" data-category="workshop">
-                    <img src="/api/placeholder/600/400" alt="Data Analysis Workshop">
-                    <div class="presentation-content">
-                        <h3>Astronomical Data Analysis with Python</h3>
-                        <div class="meta">International Astronomy Summer School (2023)</div>
-                        <div class="presentation-tags">
-                            <span class="tag">Data Analysis</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Tutorial</span>
-                        </div>
-                        <p>A hands-on workshop demonstrating advanced data analysis techniques for astronomical datasets using Python.</p>
+                <div class="presentation-card" data-category="conference">
+                    <div class="presentation-content">                
+                        <h3>Science Discussion</h3>
+                        <div class="meta">2024 逐星天文聯合寒訓</div>
+                        <div class = "meta">2024 Winter Training for Astronomy Clubs in Hsinchu </div>
+                        <div class="meta">2024.02.05</div>
                         <div class="presentation-links">
-                            <a href="slides/data_analysis_2023.pdf" class="btn">Slides</a>
-                            <a href="code/python_astronomy_tutorial.zip" class="btn">Code</a>
+                            <a href="https://drive.google.com/file/d/1xbk5S-XQKk3Uv41pg8vfHh9ZdRcd6oe2/view?usp=drive_link" class="btn">Slides</a> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="presentation-card" data-category="conference">
+                    <div class="presentation-content">
+                        <h3>The Multi-Messenger of Universe</h3>
+                        <div class="meta">2024 臺大物理營 </div>
+                        <div class = "meta">2024 NTU Physics Camp</div>
+                        <div class="meta">2024.01.30</div>
+                        <div class="presentation-links">
+                            <a href="https://drive.google.com/file/d/1g0R8XkUHdSPTmr1nrcEtbUHXG8rFt3em/view?usp=drive_link" class="btn">Slides</a> 
                         </div>
                     </div>
                 </div>
 
-                <!-- Presentation 5 -->
-                <div class="presentation-card" data-category="public">
-                    <img src="/api/placeholder/600/400" alt="Public Astronomy Talk">
-                    <div class="presentation-content">
-                        <h3>The Hunt for Exoplanets: Our Search for Other Worlds</h3>
-                        <div class="meta">Taipei Science Festival (2023)</div>
-                        <div class="presentation-tags">
-                            <span class="tag">Exoplanets</span>
-                            <span class="tag">Public Talk</span>
-                            <span class="tag">Astronomy</span>
-                        </div>
-                        <p>A public lecture on the methods used to detect exoplanets and the most exciting recent discoveries in the field.</p>
-                        <div class="presentation-links">
-                            <a href="slides/exoplanet_talk_2023.pdf" class="btn">Slides</a>
-                            <a href="videos/exoplanet_public_talk.mp4" class="btn">Video</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Presentation 6 -->
-                <div class="presentation-card" data-category="seminar">
-                    <img src="/api/placeholder/600/400" alt="Binary Asteroids Presentation">
-                    <div class="presentation-content">
-                        <h3>Binary Asteroid Detection through Lightcurve Analysis</h3>
-                        <div class="meta">Institute of Astronomy Seminar (2023)</div>
-                        <div class="presentation-tags">
-                            <span class="tag">Binary Asteroids</span>
-                            <span class="tag">Lightcurves</span>
-                            <span class="tag">Machine Learning</span>
-                        </div>
-                        <p>Detailed presentation on the methods and preliminary results of using machine learning to identify binary asteroids from lightcurve data.</p>
-                        <div class="presentation-links">
-                            <a href="slides/binary_asteroid_ml_2023.pdf" class="btn">Slides</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Presentation 7 -->
-                <div class="presentation-card" data-category="workshop">
-                    <img src="/api/placeholder/600/400" alt="ML Workshop">
-                    <div class="presentation-content">
-                        <h3>Machine Learning Applications in Astronomy</h3>
-                        <div class="meta">NTU Astronomy Club Workshop (2023)</div>
-                        <div class="presentation-tags">
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Workshop</span>
-                            <span class="tag">Data Science</span>
-                        </div>
-                        <p>An introductory workshop on machine learning concepts and their applications to astronomical datasets, designed for undergraduate students.</p>
-                        <div class="presentation-links">
-                            <a href="slides/ml_astronomy_workshop_2023.pdf" class="btn">Slides</a>
-                            <a href="code/ml_astronomy_examples.zip" class="btn">Examples</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Presentation 8 -->
-                <div class="presentation-card" data-category="public">
-                    <img src="/api/placeholder/600/400" alt="Black Holes Talk">
-                    <div class="presentation-content">
-                        <h3>Black Holes: From Theory to Recent Observations</h3>
-                        <div class="meta">Science Café Public Lecture Series (2022)</div>
-                        <div class="presentation-tags">
-                            <span class="tag">Black Holes</span>
-                            <span class="tag">Public Talk</span>
-                            <span class="tag">Astrophysics</span>
-                        </div>
-                        <p>A general audience presentation explaining the concept of black holes, from their theoretical underpinnings to recent breakthroughs in observation.</p>
-                        <div class="presentation-links">
-                            <a href="slides/black_holes_public_2022.pdf" class="btn">Slides</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -507,7 +447,7 @@
                     <a href="index.html#activities">Activities</a>
                     <a href="index.html#contact">Contact</a>
                 </div>
-                <p>National Taiwan University | EASY Team | NTU Astronomy Club</p>
+                <p></p>
             </div>
         </div>
     </footer>

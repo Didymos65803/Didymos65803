@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wei-Hao Chien | Astronomy Researcher</title>
+    <title>Cheng-An Hsieh | Homepage</title>
     <style>
         /* Variables */
         :root {
@@ -195,6 +195,14 @@
             margin-bottom: 1.5rem;
         }
 
+        .about-text .meta {
+            color: #666;
+            font-style: italic;
+            margin-top: 1rem; /* Add space above the meta text */
+            margin-bottom: 1.5rem; /* Add space below the meta text */
+        }
+
+
         .social-links {
             margin-top: 1.5rem;
             display: flex;
@@ -333,6 +341,13 @@
             box-shadow: var(--shadow);
             padding: 1.5rem;
             transition: var(--transition);
+            display: flex; /* Use Flexbox */
+            flex-direction: column; /* Arrange items vertically */
+        }
+
+        .activity-card .btn {
+            margin-top: auto; /* Push button to the bottom */
+            align-self: flex-start; /* Keep button left-aligned */
         }
 
         .activity-card:hover {
@@ -503,18 +518,18 @@
                         <li class="dropdown">
                             <a href="#research">Research</a>
                             <div class="dropdown-content">
-                                <a href="#blackhole">Black Hole Accretion</a>
+                                <a href="#blackhole">AGN</a>
                                 <a href="#binary-asteroids">Binary Asteroids</a>
-                                <a href="#venus">Venus Atmospheric Dynamics</a>
+                                <a href="#venus">Venus</a>
                             </div>
                         </li>
                         <li class="dropdown">
                             <a href="#publications">Publications</a>
                             <div class="dropdown-content">
-                                <a href="#papers">Papers</a>
+                                <a href="#papers">Papers</a>                    
+                                <a href="#posters">Posters</a>
                                 <a href="#presentations">Presentations</a>
                                 <a href="presentations.html">All Presentations</a>
-                                <a href="#posters">Posters</a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -536,7 +551,7 @@
     <section id="home" class="hero">
         <div class="container">
             <h1>Hsieh Cheng An</h1>
-            <p>Astronomy Researcher | Data Analyst | Science Communicator</p>
+            <p>Astronomy | Science Communication | Writing</p>
             <a href="#contact" class="btn">Get in Touch</a>
         </div>
     </section>
@@ -546,17 +561,21 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="/api/placeholder/400/500" alt="Wei-Hao Chien">
+                    <img src="images/IMG_5298.jpeg" alt="Hsieh Cheng An">
                 </div>
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>I am an undergraduate student at National Taiwan University with broad research interests, primarily focused on astronomical data analysis. My work spans from studying black hole accretion history to binary asteroids and atmospheric dynamics on Venus.</p>
-                    <p>As an active member of the EASY team and President of the NTU Astronomy Club, I am passionate about both cutting-edge research and science communication. I founded the Hoshiko Plan to bring astronomy to wider audiences.</p>
+                    <p>I am an undergraduate student at National Taiwan University with broad research interests, primarily focused on astronomical data analysis.</p>
+                    <p>As a Founder of Hoshiko Plan (NGO for STEM education) and member of astronomy club, I am passionate about science communication. </p>
+                    <div class="meta">Lighting up the starry sky in the dark of night.</div>
+                    
                     <div class="social-links">
-                        <a href="https://github.com/Didymos65803" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a> <!-- 或者使用 <i class="fab fa-x-twitter"></i> 代表新標誌 -->
-                        <a href="#" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        <a href="https://github.com/Didymos65803" title="GitHub"><img src="images/github.svg" alt="GitHub" width="24" height="24"></a>
+                        <a href="https://www.facebook.com/andy.hsieh.1460/" title="Facebook"><img src="images/facebook.png" alt="Facebook" width="24" height="24"></a>
+                        <a href="https://www.instagram.com/andy._.0915/"title="Instagram" ><img src="images/instagram.png" alt="Instagram" width="24" height="24"></a>
+                        <a href="https://x.com/didymos65803" title="Twitter"><img src="images/twitter.png" alt="Twitter" width="24" height="24"></a>
+                        
+                       
                     </div>
                 </div>
             </div>
@@ -567,37 +586,43 @@
     <section id="research" class="research">
         <div class="container">
             <div class="section-title">
+                <h2>Education</h2>
+                <ul>
+                    <li>National Taiwan University, Department of Physics (2022 - Present)</li>
+                    <li>National Hsinchu Senior High School (2019 - 2022)</li>
+            </div>
+
+            <div class="section-title">
                 <h2>Research Projects</h2>
-                <p>My research interests span various astronomical phenomena and data analysis techniques</p>
             </div>
             <div class="research-grid">
                 <!-- Project 1 -->
                 <div id="blackhole" class="research-card">
-                    <img src="/api/placeholder/600/400" alt="Black Hole Accretion">
+                    <img src="images/IMG_2271.jpg" alt="AGN" width="60%" height="60%">
                     <div class="research-content">
                         <h3>Inferring Obscured Cosmic Black Hole Accretion History</h3>
                         <p>Using data from the JWST/MIRI CEERS Survey to study black hole accretion history of obscured active galactic nuclei (AGNs).</p>
-                        <a href="#" class="btn">Learn More</a>
+                        <!--a href="#" class="btn">Learn More</a-->
                     </div>
                 </div>
                 
                 <!-- Project 2 -->
                 <div id="binary-asteroids" class="research-card">
-                    <img src="/api/placeholder/600/400" alt="Binary Asteroids">
+                    <img src="images/IMG_binary.jpeg" alt="Binary Asteroids" width="60%" height="60%">
                     <div class="research-content">
                         <h3>Identifying Binary Asteroids Using Machine Learning</h3>
                         <p>Developing machine learning approaches to identify binary asteroids from lightcurve data in the FOSSIL survey.</p>
-                        <a href="#" class="btn">Learn More</a>
+                        <!--a href="#" class="btn">Learn More</a-->
                     </div>
                 </div>
                 
                 <!-- Project 3 -->
                 <div id="venus" class="research-card">
-                    <img src="/api/placeholder/600/400" alt="Venus Atmosphere">
+                    <img src="images/venus.jpeg" alt="Venus Atmosphere" width="60%" height="60%">
                     <div class="research-content">
-                        <h3>Understanding Atmospheric Dynamics on Venus</h3>
-                        <p>Utilizing a General Circulation Model to investigate mechanisms driving periodic oscillations in Venus' atmospheric trace gases.</p>
-                        <a href="#" class="btn">Learn More</a>
+                        <h3>Atmospheric Dynamics on Venus</h3>
+                        <p>Utilizing a General Circulation Model to investigate mechanisms driving periodic oscillations in Venus.</p>
+                        <!--a href="#" class="btn">Learn More</a-->
                     </div>
                 </div>
             </div>
@@ -617,9 +642,8 @@
             <div class="publication-list">
                 <div class="publication-item">
                     <div class="publication-title">Inferring Obscured Cosmic Black Hole Accretion History from AGN Found by JWST/MIRI CEERS Survey</div>
-                    <div class="publication-authors">Chien, W.H., et al. (2024)</div>
-                    <div class="publication-journal">The Astrophysical Journal, Vol. XX, Issue Y</div>
-                    <p>This study presents the black hole accretion history (BHAH) of obscured active galactic nuclei (AGNs) identified from the JWST CEERS survey using mid-infrared SED fitting. Results show that BHAD peaks between redshifts 1 and 3, with variations depending on the model used.</p>
+                    <div class="publication-authors">C.A., Hsieh et al. (2025)</div>
+                    <div class="publication-journal">Publications of the Astronomical Society of Australia (Preparing)</div>
                     <div class="publication-links">
                         <a href="#">PDF</a>
                         <a href="#">arXiv</a>
@@ -627,21 +651,22 @@
                     </div>
                 </div>
                 
+            
+            
+            <!-- Presnetation and Posters -->
+            <h3 id="posters" class="mt-5">Presnetations and Posters</h3>
+            <div class="publication-list">
                 <div class="publication-item">
-                    <div class="publication-title">Identifying Binary Asteroids Using Machine Learning with Simulated Lightcurves and FOSSIL Survey Data</div>
-                    <div class="publication-authors">Chien, W.H., et al. (2023)</div>
-                    <div class="publication-journal">Icarus, Vol. XX, Issue Y</div>
-                    <p>This study presents a machine learning approach using Random Forest classifiers to identify binary asteroids from lightcurves. We aim to study the population of binary asteroids in the main asteroid belt using data from the FOSSIL survey.</p>
+                    <div class="publication-title">Inferring Obscured Cosmic Black Hole Accretion History from AGN Found by JWST/MIRI CEERS Survey</div>
+                    <div class="publication-authors">Taiwan Annual Society Meeting (2025)</div>
                     <div class="publication-links">
-                        <a href="#">PDF</a>
-                        <a href="#">arXiv</a>
-                        <a href="#">DOI</a>
+                        <a href="https://drive.google.com/file/d/187xmAs9e35PR2UUY69j-fQmACC7BVBYe/view?usp=sharing">Poster PDF</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Presentations -->
-            <h3 id="presentations" class="mt-5">Presentations</h3>
+            <h3 id="pop-science" class="mt-5">POP-Science Talks</h3>
             <div class="publication-list">
                 <div class="publication-item">
                     <div class="publication-title">Understanding Atmospheric Dynamics on Venus Using a General Circulation Model</div>
@@ -666,32 +691,61 @@
             <div style="text-align: center; margin-top: 2rem;">
                 <a href="presentations.html" class="btn">Show More Presentations</a>
             </div>
-            
-            <!-- Posters -->
-            <h3 id="posters" class="mt-5">Posters</h3>
-            <div class="publication-list">
-                <div class="publication-item">
-                    <div class="publication-title">JWST Observations of Obscured AGNs: Implications for Black Hole Growth</div>
-                    <div class="publication-authors">Presented at American Astronomical Society Meeting (2024)</div>
-                    <p>A poster presentation on the initial findings from JWST observations of obscured AGNs and their implications for understanding black hole growth throughout cosmic history.</p>
-                    <div class="publication-links">
-                        <a href="#">Poster PDF</a>
-                        <a href="#">Abstract</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+    
+
+
+
 
     <!-- Activities Section -->
     <section id="activities" class="activities">
         <div class="container">
             <div class="section-title">
                 <h2>Activities & Outreach</h2>
-                <p>My involvement in astronomy beyond research</p>
+                <p> Science Communication, Education, and Community Engagement</p>
             </div>
             
             <div class="activities-grid">
+
+                 <!-- Hoshiko -->
+                 <div id="hoshiko" class="activity-card">
+                    <h3><i>🌟</i> Hoshiko Plan</h3>
+                    <p>Lighting up rural corners with the power of astronomy and nature education.</p>
+                    <ul>
+                        <li>Hoshiko Plan, Founder</li>
+                        <li>Bring our team to communities to lead hands-on astronomy and nature lectures.</li>
+                        <li>Bridge educational gaps by providing diverse learning opportunities.</li>
+                    </ul>
+                    <a href="https://hoshikoplan.github.io/Hoshiko_website/" class="btn">Hoshiko Plan</a>
+                </div>
+                
+                <!-- Pop-science -->
+                <div id="pop-science" class="activity-card">
+                    <h3><i>🎤</i> POP-Science Talks</h3>
+                    <p>Engaging the public with astronomy through talks and presentations.</p>
+                    <ul>
+                        <li>Lectures on planetary science and astrobiology</li>
+                        <li>Workshops on data analysis techniques in astronomy</li>
+                        <li>Public discussions on recent astronomical discoveries</li>
+                    </ul>
+                    <a href="presentations.html" class="btn">View Talks</a>
+                </div>
+
+                
+                <!-- Astronomy Clubs -->
+                <div id="clubs" class="activity-card">
+                    <h3><i>🔭</i> Astronomy Clubs</h3>
+                    <p>Leading astronomy organizations to foster community engagement.</p>
+                    <ul>
+                        <li>President, HCHS Astronomy Club</li>
+                        <li>President, NTU Astronomy Club</li>                
+                        <li>Organizer of stargazing events and observational campaigns</li>
+                    </ul>
+
+                    <a href="#" class="btn">Club Activities (Upcoming)</a>
+                </div>
+                
                 <!-- Science Communication -->
                 <div id="science-comm" class="activity-card">
                     <h3><i>📝</i> Science Communication</h3>
@@ -704,31 +758,31 @@
                     </ul>
                     <a href="#" class="btn">View Articles</a>
                 </div>
-                
-                <!-- Astronomy Clubs -->
-                <div id="clubs" class="activity-card">
-                    <h3><i>🔭</i> Astronomy Clubs</h3>
-                    <p>Leading astronomy organizations to foster community engagement with space science.</p>
-                    <ul>
-                        <li>President, NTU Astronomy Club</li>
-                        <li>Founder, Hoshiko Plan</li>
-                        <li>Organizer of stargazing events and observational campaigns</li>
-                        <li>Mentor for student astronomy projects</li>
-                    </ul>
-                    <a href="#" class="btn">Club Activities</a>
-                </div>
-                
-                <!-- Special Projects -->
+
+                <!-- EASY -->
                 <div id="projects" class="activity-card">
                     <h3><i>🚀</i> EASY Team Member</h3>
-                    <p>Contributing to the EASY team's interdisciplinary research and outreach initiatives.</p>
+                    <p>Contributing to the EASY Astronomy and Earth Science promotion team.</p>
                     <ul>
-                        <li>Data analysis for team research projects</li>
-                        <li>Development of educational astronomy tools</li>
-                        <li>Coordination of collaborative research efforts</li>
-                        <li>Representation at scientific conferences</li>
+                       <li> Published some articles on social media.</li>
+                       <li> Present the beauty of astronomy and earth science.</li>
                     </ul>
-                    <a href="#" class="btn">Team Projects</a>
+                    <a href="https://www.facebook.com/easyearthEXPO" class="btn">Our Facebook</a>
+                </div>
+
+                 
+
+                 
+                 <!-- Write -->
+                 <div id="write" class="activity-card">
+                    <h3><i>🖊️</i> Write </h3>
+                    <p>Some short stories here.</p>
+                    <ul>
+                        <li>First Prize, NTU Literary Award</li>
+                        <li>Newcomer Award, United lifestyle</li>
+                        
+                    </ul>
+                    <a href="https://www.unitas.me/archives/51758" class="btn">UNITAS</a>
                 </div>
             </div>
         </div>
@@ -739,7 +793,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contact Me</h2>
-                <p>Feel free to reach out for collaborations, questions, or opportunities</p>
+                <p>Feel free to contact for questions, collaborations or opportunities</p>
             </div>
             
             <div class="contact-info" style="max-width: 600px; margin: 0 auto;">
@@ -747,7 +801,7 @@
                     <i>📧</i>
                     <div>
                         <h3>Email</h3>
-                        <p>hcngan@ntu.edu.tw</p>
+                        <p>didymos65803@gmail.com</p>
                     </div>
                 </div>
                 
@@ -763,15 +817,18 @@
                     <i>🔗</i>
                     <div>
                         <h3>Social Media</h3>
-                        <p>Find me on GitHub, LinkedIn, Twitter, and ResearchGate</p>
+                        <p>Find me on GitHub, Facebook, Instagram, and Twitter!</p>
                     </div>
                 </div>
-                
+                <div class="social-links">
+                    
+               
                 <div class="social-links" style="display: flex; justify-content: center; margin-top: 2rem;">
-                    <a href="#" title="GitHub" style="margin: 0 10px;"><i>G</i></a>
-                    <a href="#" title="LinkedIn" style="margin: 0 10px;"><i>L</i></a>
-                    <a href="#" title="Twitter" style="margin: 0 10px;"><i>T</i></a>
-                    <a href="#" title="ResearchGate" style="margin: 0 10px;"><i>R</i></a>
+                    <a href="https://github.com/Didymos65803" title="GitHub"><img src="images/github.svg" alt="GitHub" width="24" height="24"></a>
+                    <a href="https://www.facebook.com/andy.hsieh.1460/" title="Facebook"><img src="images/facebook.png" alt="Facebook" width="24" height="24"></a>
+                    <a href="https://www.instagram.com/didymos.65803/"title="Instagram" ><img src="images/instagram.png" alt="Instagram" width="24" height="24"></a>
+                    <a href="https://x.com/didymos65803" title="Twitter"><img src="images/twitter.png" alt="Twitter" width="24" height="24"></a>
+                    
                 </div>
             </div>
         </div>
@@ -781,7 +838,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Wei-Hao Chien. All Rights Reserved.</p>
+                <p>&copy; 2025 Hsieh Cheng An. All Rights Reserved.</p>
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
@@ -790,7 +847,7 @@
                     <a href="#activities">Activities</a>
                     <a href="#contact">Contact</a>
                 </div>
-                <p>National Taiwan University | EASY Team | NTU Astronomy Club</p>
+                <p></p>
             </div>
         </div>
     </footer>
